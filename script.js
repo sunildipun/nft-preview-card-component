@@ -1,1 +1,1 @@
-console.log('Script Here Building NFT component');
+console.log('Script Here Building NFT component.');
