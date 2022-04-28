@@ -33,8 +33,30 @@ body {
     flex-direction: column;
 }
 
+.image-holder {
+    width: 100%;
+    position: relative;
+}
+
 .image {
     border-radius: 1rem;
+    width: 100%;
+}
+
+.view {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    border-radius: 1rem;
+    padding: 35%;
+}
+
+.image-holder:hover .view{
+    display: block;
+    background-color: #00fff759;
+    cursor: pointer;
 }
 
 .card__header {
@@ -42,6 +64,11 @@ body {
     color: var(--white);
     font-weight: 600;
     margin: 1rem 0;
+}
+
+.card__header:hover {
+    cursor: pointer;
+    color: var(--Cyan);
 }
 
 .card__content {
@@ -87,6 +114,13 @@ body {
 .owner {
     margin: 0 0.5rem;
     color: var(--white);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.owner:hover {
+    cursor: pointer;
+    color: var(--Cyan);
 }
 
 @media only screen and (max-width: 600px) {
